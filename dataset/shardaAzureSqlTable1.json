@@ -1,0 +1,43 @@
+{
+	"name": "shardaAzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "isamplenumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ssamplepoint",
+				"type": "varchar"
+			},
+			{
+				"name": "ssamplepointdescription",
+				"type": "varchar"
+			},
+			{
+				"name": "stank",
+				"type": "varchar"
+			},
+			{
+				"name": "sclass",
+				"type": "varchar"
+			},
+			{
+				"name": "dtsampledate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "quality"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

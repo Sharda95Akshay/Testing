@@ -1,0 +1,49 @@
+{
+	"name": "shardacsvDelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sample1.csv",
+				"container": "shardacontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "isampleno",
+				"type": "String"
+			},
+			{
+				"name": "ssamplepoint",
+				"type": "String"
+			},
+			{
+				"name": "ssamplepointdesc",
+				"type": "String"
+			},
+			{
+				"name": "stank",
+				"type": "String"
+			},
+			{
+				"name": "sclass",
+				"type": "String"
+			},
+			{
+				"name": "dtsampledate",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

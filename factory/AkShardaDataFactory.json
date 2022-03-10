@@ -1,0 +1,9 @@
+{
+	"name": "AkShardaDataFactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "31a58b0c-9e2c-4d91-b631-d72f446f4099",
+		"tenantId": "f7ccad50-4aab-45fd-ad41-2430cfcbbd7f"
+	}
+}
